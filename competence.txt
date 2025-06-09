@@ -1,0 +1,18 @@
+Correctement interpréter et prendre en compte le besoin du commanditaire ou du client
+Respecter les formalismes de notation
+Connaître la syntaxe des langages et savoir l’utiliser
+Mesurer l’importance de maîtriser la structure des données à exploiter
+Comprendre les structures algorithmiques de base et leur contexte d’usage
+Prendre conscience de l’intérêt de la programmation
+Réaliser que les sources de données ont des caractéristiques propres à considérer (variation, précision, mise à jour...)
+Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées
+Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique
+Comprendre l’intérêt des synthèses numériques et graphiques pour mettre en évidence des liaisons entre variables.
+Comprendre l'intérêt de l’utilisation d’un modèle probabiliste
+Appréhender la notion de fluctuation d'échantillonnage, notamment à l’aide de simulations probabilistes
+Prendre connaissance des biais rencontrés dans la mise en place d’une enquête
+Identifier l’importance de contextualiser ses données
+Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents
+Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie
+Comprendre les intérêts de la data visualisation et de l’infographie
+Mesurer l’importance d’une expression précise et nuancée dans la communication en français et dans une langue étrangère des résultats

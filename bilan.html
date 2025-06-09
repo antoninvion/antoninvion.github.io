@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Bilan - Portfolio Antonin Vion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+	<div class="logo-container">
+		<a href="index.html">
+			<img src="img/logoavion.png" alt="Logo Vion Antonin" class="logo-img">
+		</a>
+	</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html#accueil">Accueil</a></li>
+			<li><a href="apropos.html">A propos de moi</a></li>
+            <li><a href="projet2.html">Projets</a></li>
+            <li><a href="bilan.html" class="active">Bilan</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="bilan-main">
+<section class="bilan-section fade-in-section">
+  <div class="bilan-container">
+    <h2>Mon bilan de première année</h2>
+    <p>
+      Cette première année en BUT Science des Données à Niort a été une belle expérience pour moi, tant sur le plan personnel que scolaire. Dès le début de l’année, j’ai dû m’adapter à une nouvelle vie, celle en appartement, loin de chez moi. La transition s’est faite de manière assez fluide, et j’ai eu la chance de rencontrer des personnes bienveillantes et ouvertes. Grâce à ce cadre, j’ai rapidement trouvé mon rythme et me suis habitué à la vie universitaire.
+    </p>
+    <p>
+      Le premier semestre s’est très bien déroulé. J’ai compris assez vite que j’étais à ma place dans cette formation, et cela m’a motivé à m’investir pleinement. J’ai adopté un rythme de travail régulier et efficace. Le fait d’avoir suivi la spécialité NSI au lycée m’a donné une avance en programmation, ce qui m’a permis de consacrer davantage de temps à d’autres matières que je découvrais, comme les statistiques ou l’économie. Je craignais au départ de m’ennuyer en reprenant les bases en programmation, mais finalement, cela m’a permis de renforcer mes acquis, d’aider mes camarades et d’adapter mes compétences au nouveau contexte. Je considère ce premier semestre comme une vraie réussite, aussi bien sur le plan des résultats que sur le plan de l’attitude. J’étais motivé, sérieux, et l’envie de me dépasser, notamment dans une forme de compétition amicale avec mes camarades, m’a poussé à donner le meilleur de moi-même.
+    </p>
+    <p>
+      Le deuxième semestre s’est également bien passé, avec des résultats satisfaisants. Il a été, selon moi, plus enrichissant encore, car j’y ai découvert de nouveaux outils et de nouvelles notions. Mais cette nouveauté a aussi apporté davantage de complexité. Malgré tout, j’ai su m’adapter, progresser et maintenir un bon niveau. Cela dit, ma motivation a connu une baisse durant cette période. En me reposant sur les bons résultats du premier semestre, je me suis un peu relâché. Ce relâchement a duré environ deux mois, entre mars et avril. Mes notes n’étaient pas mauvaises, mais je sentais que je n’étais plus autant impliqué, et que je n’exploitais pas tout mon potentiel. J’ai eu un déclic en mai : j’ai pris conscience de ce relâchement et me suis rapidement remis au travail. Le retour de ma motivation s’est accompagné de projets stimulants, notamment le concours Dataviz, que je tenais à réussir. Ces projets m’ont redonné une dynamique de travail sérieuse, similaire à celle du premier semestre.
+    </p>
+    <p>
+      D’un point de vue global, je suis satisfait de mon année. Je ne m’attendais pas à obtenir d’aussi bons résultats, et je pense que la compétition bienveillante entre camarades, ainsi que la bonne ambiance dans la promotion, y ont largement contribué. J’ai fait de nouvelles rencontres, découvert le monde de la donnée, et commencé à comprendre les enjeux et les métiers liés à ce domaine. L’un de mes objectifs de l’année était d’obtenir une alternance pour la suite de mon parcours. Pour l’instant, cet objectif n’est pas encore atteint, malgré un investissement important dans mes recherches. Je reste motivé, et je continue à chercher activement. Je suis convaincu qu’une expérience en entreprise serait un véritable atout pour ma formation, autant sur le plan des compétences que sur le plan personnel.
+    </p>
+    <p>
+      En résumé, cette première année a été réussie, enrichissante, et pleine de découvertes. J’ai atteint mes objectifs académiques et j’ai beaucoup appris sur moi-même. Je suis désormais prêt à repartir avec énergie et ambition pour ma deuxième année au sein du BUT Science des Données.
+    </p>
+  </div>
+</section>
+
+</main>
+
+</body>
+<script>
+  const fadeSections = document.querySelectorAll('.fade-in-section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  fadeSections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</html>

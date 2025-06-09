@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>À propos de moi - Antonin Vion</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+	<header>
+		<nav class="navbar">
+			<div class="logo-container">
+				<a href="index.html">
+					<img src="img/logoavion.png" alt="Logo Vion Antonin" class="logo-img">
+				</a>
+			</div>
+		<ul class="nav-links">
+			<li><a href="index.html" >Accueil</a></li>
+			<li><a href="apropos.html" class="active" >A propos de moi</a></li>
+			<li><a href="projet2.html">Projets</a></li>
+			<li><a href="bilan.html">Bilan</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</nav>
+	</header>
+
+
+<main class="apropos-main">
+  <h1>À propos de moi</h1>
+
+ 
+<section class="a-propos">
+  <!-- Bloc 1 -->
+  <div class="apropos-bloc bloc-gauche fade-in-section">
+     <div class="apropos-image">
+      <img src="img/monvisage.jpg" alt="Moi">
+    </div>
+    <div class="apropos-texte">
+      <p>
+        Bonjour, je m'appelle Antonin Vion. Je suis actuellement étudiant en BUT Science des Données à l'université de Poitiers, sur le campus de Niort. Je viens de Chambretaud, en Vendée, et je suis né le 17 juillet 2006.
+        Pour me décrire, je dirais que je suis quelqu’un de curieux, réservé, mais toujours à l’écoute des autres. J’ai aussi un côté créatif. En cours, je suis motivé et sérieux. J’aime particulièrement les mathématiques et l’informatique, notamment coder en Python.
+      </p>
+    </div>
+  </div>
+  
+    <!-- Bloc 2 -->
+  <div class="apropos-bloc bloc-droite fade-in-section">
+    <div class="apropos-image">
+      <img src="img/bac.png" alt="Handball et théâtre">
+    </div>
+    <div class="apropos-texte">
+      <p>
+        Mon parcours scolaire a débuté par un baccalauréat général avec les spécialités Mathématiques et Numérique et Sciences Informatiques (NSI) en terminale, ainsi que la spécialité Physique-Chimie en première. J’ai également suivi les options Mathématiques expertes et Théâtre.<br>
+		J’ai obtenu mon baccalauréat avec la mention Très Bien, et j’ai obtenu la note de 20/20 aux épreuves de mes deux spécialités de terminale. Aujourd’hui, je poursuis mes études en BUT Science des Données à Niort. Les matières que je préfère sont les mathématiques et la programmation en Python.  
+      </p>
+    </div>
+  </div>
+
+  <!-- Bloc 2 -->
+  <div class="apropos-bloc bloc-gauche fade-in-section">
+    <div class="apropos-image">
+      <img src="img/apropos2.png" alt="Handball et théâtre">
+    </div>
+    <div class="apropos-texte">
+      <p>
+        J’ai pratiqué le handball aux Herbiers pendant 11 ans, de 2013 à 2024. Je jouais au poste de pivot ou d’ailier. J’ai également suivi une option théâtre pendant 6 ans. J’ai beaucoup apprécié ces années, et j’ai eu la chance de participer, avec mon lycée, au <a href="https://www.vents-et-marees.fr/le-projet-de-printemps-theatral/" target="_blank" rel="noopener noreferrer">Printemps théâtral des lycées</a> organisé par l’association Vents et Marées à La Roche-sur-Yon en 2023. Ce fut une expérience très enrichissante pour moi.<br>
+        Je ne me considère pas comme un grand sportif, mais j’aime faire du sport avec mes amis ou ma famille, au moins une fois par semaine. J’aime aussi me lancer des défis. C’est pour cette raison qu’au lycée, j’ai participé trois fois au <a href="https://algorea.org/" target="_blank" rel="noopener noreferrer">concours Algoréa</a>, un concours de programmation basé sur la résolution de problèmes. J’ai adoré cette expérience et j’ai même réussi à atteindre les demi-finales en terminale.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bloc 3 -->
+  <div class="apropos-bloc bloc-droite fade-in-section">
+     <div class="apropos-image">
+      <img src="img/presentation.png" alt="Passions">
+    </div>
+    <div class="apropos-texte">
+      <p>
+        En dehors de l’école, je suis passionné par les jeux de société et les jeux d’énigmes. J’aime résoudre des problèmes et mettre ma logique à l’épreuve. C’est aussi pour cela que j’apprécie autant les mathématiques et l’informatique.
+      </p>
+    </div>
+  </div>
+  
+</section>
+
+
+</main>
+
+
+</body>
+<script>
+  const fadeSections = document.querySelectorAll('.fade-in-section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  fadeSections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</html>

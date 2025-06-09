@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Projets</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- Navbar -->
+	<header>
+		<nav class="navbar">
+			<div class="logo-container">
+				<a href="index.html">
+					<img src="img/logoavion.png" alt="Logo Vion Antonin" class="logo-img">
+				</a>
+			</div>
+		<ul class="nav-links">
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="apropos.html">A propos de moi</a></li>
+			<li><a href="projet2.html" class="active">Projets</a></li>
+			<li><a href="bilan.html">Bilan</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</nav>
+	</header>
+
+<!-- Frise chronologique des projets -->
+<section id="projets" class="timeline">
+  <h1 class="timeline-title">Mes projets</h1>
+  <div class="filtre-semestre">
+  <button onclick="filtrerSemestre('semestre1')" class="filtre-btn active">Semestre 1</button>
+  <button onclick="filtrerSemestre('semestre2')" class="filtre-btn">Semestre 2</button>
+</div>
+  <div class="timeline-line"></div>
+
+
+<!-- Projet 1 -->
+  <div class="timeline-item left semestre1">
+  <span class="projet-date">Octobre 2024</span>
+    <div class="content" onclick="openModal('modal-projet1')">
+      <img src="img/projet1.png" alt="Projet 1">
+      <h3>Présentation d’un territoire</h3>
+	  
+    </div>
+  </div>
+
+
+  <!-- Projet 2 -->
+  <div class="timeline-item right semestre1">
+  <span class="projet-date">Octobre-Novembre 2024</span>
+    <div class="content" onclick="openModal('modal-projet2')">
+      <img src="img/projet2.png" alt="Projet 2">
+      <h3>Analyse INSEE Haute-Vienne</h3>
+	  
+    </div>
+  </div>
+
+  <!-- Projet 3 -->
+  <div class="timeline-item left semestre1">
+  <span class="projet-date">Novembre 2024</span>
+    <div class="content" onclick="openModal('modal-projet3')">
+      <img src="img/projet3.png" alt="Projet 3">
+      <h3>JSON to CSV en Python</h3>
+	  
+    </div>
+  </div>
+
+  <!-- Projet 4 -->
+  <div class="timeline-item right semestre1">
+  <span class="projet-date">Novembre 2024</span>
+    <div class="content" onclick="openModal('modal-projet4')">
+      <img src="img/projet4.png" alt="Projet 4">
+      <h3>Enquête santé étudiante</h3>
+	  
+    </div>
+  </div>
+
+  <!-- Projet 5 -->
+  <div class="timeline-item left semestre1">
+  <span class="projet-date">Décembre 2024</span>
+    <div class="content" onclick="openModal('modal-projet5')">
+      <img src="img/projets.png" alt="Projet 5">
+      <h3>Reporting Excel/VBA</h3>
+	  
+    </div>
+  </div>
+
+  <!-- Projet 6  -->
+  <div class="timeline-item right semestre1" >
+  <span class="projet-date">Janvier 2025</span>
+    <div class="content" onclick="openModal('modal-projet6')">
+      <img src="img/projet6.png" alt="Projet 6">
+      <h3>Préparation et synthèse d'un tableau de données en vue d'une analyse exploratoire simple</h3>
+	  
+    </div>
+  </div>
+  
+  <!-- Semestre 2-->
+    <!-- Projet 7  -->
+  <div class="timeline-item left semestre2" style="display: none;">
+  <span class="projet-date">Mars-avril 2025</span>
+    <div class="content" onclick="openModal('modal-projet7')">
+      <img src="img/projet7.png" alt="Projet 7">
+      <h3>Conception et implémentation d'une base de données</h3>
+	  
+    </div>
+  </div>
+  
+    <!-- Projet 8  -->
+  <div class="timeline-item right semestre2" style="display: none;">
+  <span class="projet-date">Mai 2025</span>
+    <div class="content" onclick="openModal('modal-projet8')">
+      <img src="img/projet8.png" alt="Projet 8">
+      <h3>Régression sur des données réelles</h3>
+	  
+    </div>
+  </div>
+  
+    <!-- Projet 9  -->
+  <div class="timeline-item left semestre2" style="display: none;">
+  <span class="projet-date">Mai 2025</span>
+    <div class="content" onclick="openModal('modal-projet9')">
+      <img src="img/projet9.png" alt="Projet 9">
+      <h3>Estimation par échantillonnage</h3>
+	  
+    </div>
+  </div>
+  
+    <!-- Projet 10  -->
+  <div class="timeline-item right semestre2" style="display: none;">
+  <span class="projet-date">22 Mai 2025</span>
+    <div class="content" onclick="openModal('modal-projet10')">
+      <img src="img/projet10.png" alt="Projet 10">
+      <h3> Journée Datavisualisation</h3>
+	  
+    </div>
+  </div>
+  
+    <!-- Projet 11  -->
+  <div class="timeline-item left semestre2" style="display: none;">
+  <span class="projet-date">26 Mai 2025</span>
+    <div class="content" onclick="openModal('modal-projet11')">
+      <img src="img/projet11.png" alt="Projet 11">
+      <h3>Construction et présentation d'indicateurs de performance</h3>
+	  
+    </div>
+  </div>
+  
+      <!-- Projet 12  -->
+  <div class="timeline-item right semestre2" style="display: none;">
+  <span class="projet-date">Juin 2025</span>
+    <div class="content" onclick="openModal('modal-projet12')">
+      <img src="img/projet12.png" alt="Projet 12">
+      <h3>Analyse de données, reporting et datavisualisation</h3>
+	  
+    </div>
+  </div>
+</section>
+<button id="scrollTopBtn" onclick="scrollToTop()" title="Remonter en haut">↑</button>
+
+
+</body>
+<!-- MODALE PROJET 1 -->
+<div id="modal-projet1" class="modal">
+
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet1')">&times;</span>
+    <h2>Présentation d’un territoire</h2>
+  <p>
+    Notre premier projet de l’année consistait à présenter une ville ayant accueilli les Jeux Olympiques. En groupe, avec Nathan Puaud et Toni Robert, nous avons choisi <strong>Los Angeles en 1984</strong>.<br><br>
+
+    Ce travail mêlait <strong>recherche documentaire</strong>, <strong>synthèse d’informations</strong> et <strong>présentation orale</strong>, à la fois en <strong>français</strong> et en <strong>anglais</strong>.<br><br>
+
+    Les recherches se sont déroulées sans difficulté majeure. En revanche, la conception du PowerPoint s’est révélée plus exigeante : il a fallu organiser clairement les données tout en gardant un format synthétique. La contrainte la plus complexe a été de <strong>réduire et hiérarchiser l’information</strong> : choisir les bons mots, les bonnes données et structurer les slides efficacement pour ne pas surcharger.<br><br>
+
+    Sur le plan oral, je me suis senti à l’aise, tant en français qu’en anglais. Ce projet m’a permis de <strong>travailler ma capacité à m’exprimer à l’écrit et à l’oral</strong>, dans les deux langues. L’organisation au sein du groupe s’est faite naturellement, même si avec du recul, nous aurions pu mieux anticiper le temps de parole lors de l’oral final.<br><br>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Mesurer l’importance d’une expression précise et nuancée dans la communication en français et en anglais<br>
+      – Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie<br>
+      – Correctement interpréter et prendre en compte le besoin du commanditaire ou du client
+    </p>
+    <strong>Résultats obtenus :</strong><br>
+    PowerPoint : <strong>13/20</strong><br>
+    Oral en français : <strong>14/20</strong><br>
+    Oral en anglais : <strong>17/20</strong><br><br>
+
+    Ce premier projet m’a permis de <strong>développer des compétences de communication et de synthèse</strong>, tout en renforçant ma capacité à travailler en équipe dans un contexte bilingue.
+  </p>
+  <p>
+  <strong>Télécharger le support :</strong><br>
+  <a href="docs/presentation_los_angeles.pptx" download class="download-link">
+    📥 Télécharger le PowerPoint du projet (Los Angeles 1984)
+  </a>
+</p>
+  </div>
+</div>
+<!-- MODALE PROJET 2 -->
+<div id="modal-projet2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet2')">&times;</span>
+	<h2>Analyse des données INSEE : Haute-Vienne</h2>
+      <p>
+        L’objectif de ce projet était de réaliser un <strong>compte rendu d’analyse sur le département de la Haute-Vienne</strong>, à partir des données de l’INSEE. Le but : mieux comprendre les spécificités du territoire sur les aspects <strong>démographiques</strong> et <strong>économiques</strong>, en particulier autour de l’<strong>emploi</strong>.<br><br>
+
+        Pour cela, j’ai utilisé <strong>Excel</strong> pour produire des graphiques et des indicateurs statistiques tels que les <strong>moyennes</strong>, <strong>médianes</strong> et <strong>écarts-types</strong>. Grâce à ces analyses, j’ai pu identifier des tendances fortes sur les communes étudiées. J’ai ensuite rédigé un <strong>compte rendu structuré sous Word</strong>, présentant les résultats avec clarté et esprit de synthèse.<br><br>
+
+        Le projet s’est déroulé sur plusieurs semaines, avec un rythme qui nous a permis de <strong>travailler progressivement</strong>, de recevoir des retours réguliers de notre enseignante, et d’améliorer continuellement la qualité du rendu. Cette approche m’a permis de <strong>progresser en rédaction</strong> et en <strong>analyse critique</strong> des données.<br><br>
+
+        J’ai particulièrement apprécié ce projet car il combinait à la fois <strong>une phase technique</strong> et <strong>une phase rédactionnelle</strong> : comprendre, interpréter, structurer et communiquer les résultats.<br><br>
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique<br>
+      – Identifier l’importance de contextualiser ses données<br>
+      – Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents<br>
+      – Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie
+    </p>
+        <strong>Résultats obtenus :</strong><br>
+        – Partie technique (Excel) : <strong>18/20</strong><br>
+        – Partie rédactionnelle (Word) : <strong>17,5/20</strong><br><br>
+
+        Ce projet m’a permis de <strong>renforcer ma capacité à exploiter des données statistiques</strong>, à <strong>formuler une analyse claire</strong> et à <strong>communiquer efficacement des résultats</strong>, avec rigueur et adaptabilité.
+      </p>
+      <p>
+        <strong>Télécharger le compte rendu :</strong><br>
+        <a href="docs/Compte-renduAntoninVion" download class="download-link">
+         📥 Télécharger le compte rendu complet (Word)
+        </a>
+	 </p>
+  </div>
+</div>
+
+<!-- MODALE PROJET 3 -->
+<div id="modal-projet3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet3')">&times;</span>
+	<h2>Traitement de données JSON en Python</h2>
+      <img src="img/projet3.png" alt="Projet 3" class="image-flottante droite">
+      <p>
+        L'objectif de ce projet était de transformer un fichier <strong>JSON</strong> contenant les activités à Paris en un <strong>fichier CSV</strong>, en filtrant et conservant uniquement certaines données pertinentes. Ce projet a été réalisé en <strong>binôme</strong> durant les heures de cours. J'ai travaillé avec Jérémie Ndjoye pour la première fois, une collaboration qui à été enrichissante.<br><br>
+
+        La principale difficulté rencontrée fut l'<strong>organisation du travail à deux</strong> sur un même fichier Python. Pour y remédier, nous avons décidé de <strong>diviser le programme en deux parties</strong> : chacun s’est chargé d’une section du code, que nous avons ensuite réassemblées pour obtenir une version fonctionnelle du script.<br><br>
+
+        Ce projet m’a permis de <strong>renforcer ma compréhension de la manipulation de fichiers JSON et CSV en Python</strong>, mais aussi de travailler en collaboration tout en respectant les contraintes de structure de données.<br><br>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Connaître la syntaxe des langages et savoir l’utiliser<br>
+      – Comprendre les structures algorithmiques de base et leur contexte d’usage<br>
+      – Prendre conscience de l’intérêt de la programmation
+    </p>
+	<p>
+        <strong>Résultat obtenu :</strong><br>
+        Note finale : <strong>19/20</strong>
+      </p>
+      <p>
+        <strong>Télécharger le script Python :</strong><br>
+        <a href="docs/projet3_script.py" download class="download-link">
+          📥 Télécharger le fichier Python du projet (JSON vers CSV)
+        </a>
+      </p>
+  </div>
+</div>
+
+<!-- MODALE PROJET 4 -->
+<div id="modal-projet4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet4')">&times;</span>
+	<h2>Mise en oeuvre d'une enquête</h2>
+      <img src="img/projet4.png" alt="Projet 4" class="image-flottante droite">
+      <p>
+        Ce projet a été réalisé en une matinée. L'objectif était de créer une <strong>enquête sur la santé des étudiants de l'IUT de Niort</strong>. En groupe de trois, nous avons conçu un <strong>organigramme structurant le questionnaire</strong>, réfléchi aux <strong>questions essentielles</strong> à poser, puis rédigé le questionnaire directement dans le logiciel <strong>Sphinx</strong>.<br><br>
+
+        La principale difficulté était le <strong>temps très limité</strong>, qui exigeait une bonne organisation et une prise de décision rapide sur le contenu de l'enquête. Réaliser un <strong>organigramme logique et clair</strong> en un temps restreint, tout en veillant à respecter un nombre raisonnable de questions, a été un vrai défi.<br><br>
+
+        Ce projet nous a permis de comprendre les enjeux de la <strong>conception d’une enquête</strong>, de la démarche de questionnement jusqu'à la mise en forme technique. <br><br>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique<br>
+      – Identifier l’importance de contextualiser ses données<br>
+      – Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents<br>
+      – Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie
+    </p>
+	<p>
+        <strong>Résultat obtenu :</strong><br>
+        Note finale : <strong>15,5/20</strong>
+      </p>
+  </div>
+</div>
+
+<!-- MODALE PROJET 5 -->
+<div id="modal-projet5" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet5')">&times;</span>
+	<h2>Création d'un reporting </h2>
+      <img src="img/projets.png" alt="Projet 5" class="image-flottante droite">
+      <p>
+        Ce projet a été réalisé lors d'une <strong>semaine bloquée en binôme</strong>. L’objectif était de développer un <strong>outil permettant de saisir les notes de chaque matière</strong>, puis de générer un <strong>tableau de bord avec des graphiques de suivi</strong> du semestre. Le but était d’évaluer si l’étudiant est <strong>admissible l’année suivante</strong>.<br><br>
+
+        Le projet s’est divisé en deux parties : une partie Excel pour la conception du tableau de bord, et une autre en <strong>VBA</strong> pour automatiser la saisie et les traitements. Je me suis plus occupé de la partie <strong>VBA</strong>, tandis que mon binôme Jérémie Ndjoye c'est plus occupé de la partie Excel.<br><br>
+
+        La principale difficulté a été de travailler avec <strong>VBA pour la première fois</strong>. Il fallait comprendre ce qui était possible de faire avec ce langage et apprendre à le manipuler efficacement en peu de temps. Malgré cela, nous avons réussi à bien nous organiser et à produire un outil fonctionnel et clair.<br><br>
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Connaître la syntaxe des langages et savoir l’utiliser<br>
+      – Comprendre les structures algorithmiques de base et leur contexte d’usage<br>
+      – Prendre conscience de l’intérêt de la programmation<br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique
+    </p>
+        <strong>Résultat obtenu :</strong><br>
+        Note finale : <strong>19/20</strong>
+      </p>
+      <p>
+        <strong>Télécharger le fichier Excel/VBA :</strong><br>
+        <a href="docs/SAE-creation_dun_reporting.xlsm" download class="download-link">
+           📥 Télécharger l'outil de reporting (.xlsm)
+        </a>
+      </p>
+  </div>
+</div>
+<!-- MODALE PROJET 6 : Enquête pratique sportive -->
+<div id="modal-projet6" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet6')">&times;</span>
+    <h2>Analyse des résultats d'une enquête sportive</h2>
+    <p>
+      Ce projet, réalisé en binôme avec <strong>Paul Babin</strong>, portait sur l’analyse des réponses à une <strong>enquête menée auprès des étudiants de l’IUT de Niort</strong> concernant leur <strong>pratique sportive</strong>.<br><br>
+
+      Notre mission était de produire un <strong>rapport structuré</strong> à partir de ces données brutes. Avant toute analyse, nous avons dû réaliser <strong>l’organigramme de l’enquête</strong>, permettant de mieux comprendre la logique du questionnaire.<br><br>
+
+      Le rapport se divisait en <strong>quatre parties</strong> :<br>
+      1. La population interrogée<br>
+      2. Les étudiants sportifs<br>
+      3. Les non-sportifs<br>
+      4. Une synthèse comparative avec la <strong>moyenne nationale</strong> (temps hebdomadaire consacré au sport)<br><br>
+
+      Le travail s’est appuyé sur les réponses collectées avec <strong>Sphinx</strong>, que nous avons exploitées pour croiser différentes modalités et <strong>dégager des tendances</strong>. J’ai personnellement rédigé les parties <strong>2 et 4</strong> du rapport, tandis que mon binôme s’est chargé des parties <strong>1 et 3</strong>. En complément, nous avons fourni un <strong>PDF contenant plusieurs graphiques</strong> pertinents pour illustrer les résultats.<br><br>
+
+      Même si ce projet ne m’a pas passionné autant que d’autres, il m’a permis de développer mes capacités d’analyse et de synthèse dans un cadre structuré.
+    </p>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique<br>
+      – Identifier l’importance de contextualiser ses données<br>
+      – Mesurer l’importance d’une expression précise et nuancée dans la communication en français<br>
+      – Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie
+    </p>
+
+    <p>
+      <strong>Note obtenue :</strong> <span style="color:#28a745; font-weight:bold;">16/20</span>
+    </p>
+	<p>
+	<strong>Télécharger le rapport :</strong><br>
+	<a href="docs/rapport enquete.pdf" download class="download-link">
+           📥 Télécharger le rapport(.pdf)
+        </a>
+	</p>
+  </div>
+</div>
+	 <!-- MODALE PROJET 7 : Base de données -->
+<div id="modal-projet7" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet7')">&times;</span>
+    <h2>Conception et implémentation d’une base de données</h2>
+    <p>
+      Ce projet, réalisé en binôme avec <strong>Rémi Misery</strong>, avait pour objectif de concevoir une <strong>base de données relationnelle complète</strong>, depuis le <strong>modèle conceptuel</strong> jusqu’à son <strong>implémentation dans MySQL</strong>.<br><br>
+
+      Nous avons d’abord défini le schéma conceptuel, puis traduit ce dernier en une structure physique sous MySQL. J’ai personnellement développé les <strong>requêtes SQL d’insertion</strong> et le <strong>programme Python</strong> qui automatise l’importation de données à partir de fichiers CSV.<br><br>
+
+      Une fois la base opérationnelle, nous avons conçu une <strong>interface graphique en Python</strong> (Tkinter), permettant une interaction conviviale avec les différentes tables (consultation, insertion, export, requêtes personnalisées, etc.). Cette interface simulait les fonctions essentielles d’une application métier.<br><br>
+
+      J’ai également réalisé une <strong>vidéo tutorielle</strong> présentant le fonctionnement global du projet, incluant un bilan réflexif. Cela a été une excellente occasion de renforcer mes compétences en <strong>communication technique</strong>.<br><br>
+
+      Nous avons su bien nous organiser, en répartissant les tâches de façon équilibrée et efficace. Ce projet a été très formateur et enrichissant, tant sur le plan technique que collaboratif.
+    </p>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Connaître la syntaxe des langages et savoir l’utiliser<br>
+      – Prendre conscience de l’intérêt de la programmation<br>
+      – Réaliser que les sources de données ont des caractéristiques propres à considérer (variation, précision, mise à jour...)<br>
+      – Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées
+    </p>
+
+    <p>
+      <strong>Note obtenue :</strong> <span style="color:#28a745; font-weight:bold;">19/20</span>
+    </p>
+
+    <p><strong>Fichiers associés :</strong></p>
+    <ul>
+      <li><a href="docs/selmarin_ihm.py" download class="download-link">📥 Télécharger le script Python (interface)</a></li>
+      <li><a href="docs/selmarin_tuto_tests.mp4" download class="download-link">📥 Télécharger la vidéo tutorielle</a></li>
+    </ul>
+
+  </div>
+</div>
+<!-- MODALE PROJET 8 : Prédiction de prix immobiliers en R -->
+<div id="modal-projet8" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet8')">&times;</span>
+    <h2>Régression sur des données réelles</h2>
+    <p>
+      Ce projet, réalisé en binôme avec <strong>Jérémie Ndjoye</strong>, portait sur la prédiction du <strong>prix de vente de biens immobiliers</strong> dans les Deux-Sèvres. L'objectif était d'entraîner un modèle linéaire sur un <strong>jeu d'entraînement (train)</strong> pour prédire les prix manquants du fichier <em>test</em>.
+
+      Nous avons travaillé sur une dizaine d'heures de cours, réparties sur une semaine. Les variables exploitées incluaient la <strong>surface de terrain</strong>, la <strong>surface habitable</strong>, le <strong>nombre de pièces</strong> et la <strong>commune</strong>. À partir de croisements et de tests de régressions, nous avons sélectionné les modèles les plus significatifs selon leur <strong>R²</strong>.
+
+      Je me suis chargé de <strong>coder l'ensemble des régressions linéaires sous R</strong>, tandis que mon binôme a rédigé le rapport. La difficulté principale a été le temps limité, ainsi que la faible qualité prédictive des données, ce qui a rendu l'évaluation du modèle complexe et parfois frustrante.
+    </p>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Connaître la syntaxe des langages et savoir l’utiliser<br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique<br>
+      – Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents<br>
+      – Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées
+    </p>
+
+    <p>
+      <strong>Note obtenue :</strong> 13/20
+    </p>
+
+    <p><strong>Télécharger le code R :</strong></p>
+    <ul>
+      <li><a href="docs/predictionfinal.R" download class="download-link">📥 Télécharger le script R</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MODALE PROJET 9 : Estimation par échantillonnage -->
+<div id="modal-projet9" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet9')">&times;</span>
+    <h2>Estimation par échantillonnage</h2>
+    <p>
+      Ce projet, réalisé en binôme avec Jérémie Ndjoye, consistait à estimer la population de la région des Pays de la Loire à partir d’un échantillon de communes.
+
+      Nous avons appliqué deux méthodes : l’échantillonnage aléatoire et l’échantillonnage stratifié. Une analyse comparative des résultats nous a permis de mieux comprendre l’impact du choix de la méthode sur la fiabilité des estimations.
+
+      Dans une seconde partie, nous avons exploité les données de l’enquête sur la pratique sportive des étudiants, en réalisant des tests statistiques pour étudier d’éventuelles relations entre la pratique sportive et d’autres variables.
+
+      J’ai personnellement pris en charge la deuxième partie du projet. Ce travail nous a aidés à prendre conscience de l’importance de la méthodologie dans une analyse statistique sérieuse.
+    </p>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées<br>
+      – Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents<br>
+      – Identifier l’importance de contextualiser ses données<br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique
+    </p>
+
+    <p>
+      <strong>Note obtenue :</strong> 16/20
+    </p>
+	 <p><strong>Télécharger le rapport :</strong></p>
+    <ul>
+      <li><a href="docs/rapport_vion_ndjoye.pdf" download class="download-link">📥 Télécharger le rapport</a></li>
+    </ul>
+  </div>
+</div>
+<!-- MODALE PROJET 10 : Concours Dataviz -->
+<div id="modal-projet10" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet10')">&times;</span>
+    <h2>Concours national Dataviz</h2>
+    <p>
+      Ce concours, organisé entre les BUT Science des Données de France, se déroule sur une journée, en groupe de 4 à 5 étudiants.  
+      Le défi consistait à exploiter un jeu de données fourni par l’INSEE pour produire une infographie répondant à une problématique libre, définie par chaque équipe.
+
+      Mon groupe était composé de Jérémie Ndjoye, Jérémy Piton, Armand-Valentin Gasse, Nathael Benoit et moi-même. Nous avons travaillé sur les données liées à la scolarité des jeunes de 15 à 29 ans en France.
+
+      J’ai proposé la problématique validée par l’équipe, puis contribué à la deuxième partie de l’infographie.  
+      Chaque membre a travaillé sur une section précise, ce qui a rendu l’organisation fluide et efficace. L’ambiance de travail était sérieuse et motivée, ce qui nous a permis d’être sélectionnés pour représenter le BUT SD de Niort à l’échelle nationale.
+
+      Nous avons ensuite réalisé une vidéo de présentation pour la phase finale du concours, dont les résultats seront annoncés le 12 juin.  
+      Cette expérience, bien que courte et intense, a été très enrichissante.
+
+    </p>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Comprendre les intérêts de la data visualisation et de l’infographie<br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique<br>
+      – Identifier l’importance de contextualiser ses données<br>
+      – Mesurer l’importance d’une expression précise et nuancée dans la communication des résultats
+    </p>
+
+    <p>
+      <strong>Note obtenue :</strong> 16/20 (résultats nationaux à venir)
+    </p>
+
+    <p><strong>Fichier associé :</strong></p>
+    <ul>
+      <li><a href="docs/Infographie concours Dataviz.pdf" download class="download-link">📥 Télécharger l’infographie finale (PDF)</a></li>
+    </ul>
+  </div>
+</div>
+<!-- MODALE PROJET 11 : Indicateurs de performance - Fleury Michon -->
+<div id="modal-projet11" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet11')">&times;</span>
+    <h2>Construction et présentation d’indicateurs de performance</h2>
+    <p>
+      Ce projet, réalisé en une journée en binôme avec Armand-Valentin Gasse, avait pour objectif d’analyser les performances de l’entreprise Fleury Michon à l’aide d’indicateurs de performance.
+
+      Il s’agissait de produire un rapport écrit contenant une analyse chiffrée et illustrée par des graphiques, ainsi qu’un tableau de bord pour présenter les données de manière synthétique. J’ai pris en charge la première partie du texte ainsi que la construction du tableau de bord, tandis que mon binôme s’est occupé du reste du travail.
+
+      Malgré un temps limité, nous avons su nous organiser efficacement et finaliser le projet dans les temps. Le travail m’a semblé intuitif grâce aux exercices similaires réalisés en amont, et la collaboration s’est révélée fructueuse, bien que ce ne soit que notre deuxième projet ensemble.
+
+      Je pense que nous avons fourni un travail solide, avec un bon esprit d’équipe et une relecture attentive en fin de projet.
+    </p>
+
+    <p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique<br>
+      – Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents<br>
+      – Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie
+    </p>
+
+    <p>
+      <strong>Note obtenue :</strong> 17,5/20
+    </p>
+
+    <p><strong>Fichier associé :</strong></p>
+    <ul>
+      <li><a href="docs/SAEeconomieGASSE_VION.pdf" download class="download-link">📥 Télécharger le rapport PDF</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- MODALE PROJET 12 : Nettoyage et préparation des données -->
+<div id="modal-projet12" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projet12')">&times;</span>
+    <h2>Nettoyage et préparation de données pour analyse</h2>
+    <p>
+      Durant ce projet, j’ai occupé plusieurs rôles au sein de mon groupe. En tant que <strong>Scrum Master</strong>, je me suis chargé de la <strong>mise à jour du tableau Kanban</strong> ainsi que de la <strong>bonne application de la méthode Scrum</strong>. J’ai organisé des réunions quotidiennes pour répartir les tâches et assurer un suivi régulier. J’ai également contribué à la <strong>réalisation du PowerPoint</strong> pour notre présentation en anglais.<br><br>
+
+      Ma contribution principale a toutefois concerné la <strong>gestion et la préparation des données</strong>. J’ai travaillé sur le nettoyage de la feuille <em>"Accidents"</em> : homogénéisation des variables texte (ex : <em>"Autre, à préciser"</em>), vérification des variables numériques, et repérage des incohérences. Ce travail m’a permis de mettre en pratique l’apprentissage critique : <strong>« Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées »</strong>.<br><br>
+
+      J’ai aussi réalisé une <strong>comparaison statistique</strong> entre notre population et celle de la population française à partir de données INSEE, notamment sur l’âge et la catégorie socioprofessionnelle (CSP). Il a fallu <strong>adapter les valeurs</strong> entre les deux bases pour les rendre comparables. J’ai également identifié plusieurs <strong>valeurs aberrantes</strong> (ex : une personne née en 2023 mais déclarée retraitée), qui auraient pu fausser les résultats d’analyse.<br><br>
+
+      Ce projet m’a donné une compréhension concrète de l’importance de la <strong>qualité des données</strong> dans tout processus d’analyse fiable. Il a consolidé ma rigueur technique ainsi que mes compétences en gestion de projet.
+    </p>
+	<p>
+      <strong>Compétences mobilisées :</strong><br>
+      – Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées<br>
+      – Réaliser que les sources de données ont des caractéristiques propres à considérer (variation, précision, mise à jour...)<br>
+      – Identifier l’importance de contextualiser ses données<br>
+      – Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents<br>
+      – Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie
+    </p>
+
+    </p>
+
+    <p>
+      <strong>Note :</strong> à venir
+    </p>
+  </div>
+</div>
+<script>
+
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  // Fermer si on clique en dehors
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) modal.style.display = "none";
+    });
+  };
+  function filtrerSemestre(semestre) {
+  // Désactiver tous les boutons
+  document.querySelectorAll('.filtre-btn').forEach(btn => btn.classList.remove('active'));
+
+  // Activer le bouton cliqué
+  const boutonActif = document.querySelector(`[onclick*="${semestre}"]`);
+  if (boutonActif) boutonActif.classList.add('active');
+
+  // Afficher/Masquer les projets
+  document.querySelectorAll('.timeline-item').forEach(item => {
+    if (item.classList.contains(semestre)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+
+</script>
+
+
