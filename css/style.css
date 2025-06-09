@@ -242,13 +242,13 @@ header {
     text-decoration: underline;
 }
 
-.fa fa-phone {
+.fa-phone {
         color: #ff6600;
     font-weight: bold;
     text-decoration: none;
 }
 
-.fa fa-phone:hover {
+.fa-phone:hover {
     text-decoration: underline;
 }
 
