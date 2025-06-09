@@ -242,6 +242,16 @@ header {
     text-decoration: underline;
 }
 
+.fa fa-phone {
+        color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fa fa-phone:hover {
+    text-decoration: underline;
+}
+
 .contact-cv {
     flex: 1;
     min-width: 300px;
