@@ -1,105 +1,189 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Portfolio Vion Antonin</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Antonin Vion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navbar -->
-	<header>
-		<nav class="navbar">
-			<div class="logo-container">
-				<a href="index.html">
-					<img src="img/logoavion.png" alt="Logo Vion Antonin" class="logo-img">
-				</a>
-			</div>
-		<ul class="nav-links">
-
-			<li><a href="apropos.html" >A propos de moi</a></li>
-			<li><a href="projet2.html">Projets</a></li>
-			<li><a href="bilan.html">Bilan</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		</nav>
-	</header>
-
-
-
-
-<section class="accueil" id="accueil">
-  <div class="accueil-container">
-    <div class="left-side fade-in">
-      <h1>VION<br>ANTONIN</h1>
+  <nav>
+    <div>Mon Portfolio</div>
+    <div>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#bilans">Bilan</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
     </div>
-    <div class="right-side fade-in fade-in-delay">
-      <p>Bienvenue sur mon portfolio</p>
+  </nav>
+
+  <section id="accueil">
+    <div class="hero-content">
+      <h1>Étudiant en BUT Science des Données</h1>
+      <p>Je me forme au métier de Data Scientist avec un fort intérêt pour l'analyse de données et le machine learning.</p>
     </div>
+    <div class="hero-photo">
+      <img src="img/monvisage.jpg" alt="Photo de profil - Data Scientist">
+    </div>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos de moi</h2>
+    <div class="apropos-grid">
+      <div class="card">
+        <h3>Personnalité</h3>
+        <ul>
+          <li>Sérieux et motivé</li>
+          <li>Curieux et ouvert d’esprit</li>
+        </ul>
+        <div class="card-desc">
+          Bonjour, je m'appelle Antonin Vion. Je suis actuellement étudiant en BUT Science des Données à l'université de Poitiers, sur le campus de Niort. Je viens de Chambretaud, en Vendée, et je suis né le 17 juillet 2006. Pour me décrire, je dirais que je suis quelqu’un de curieux, réservé, mais toujours à l’écoute des autres. J’ai aussi un côté créatif. En cours, je suis motivé et sérieux. J’aime particulièrement les mathématiques et l’informatique, notamment coder en Python.
+        </div>
+      </div>
+      <div class="card">
+        <h3>Parcours académique</h3>
+        <ul>
+          <li>BUT Science des Données — Campus de Niort</li>
+          <li>Baccalauréat (Maths & NSI) — Mention Très Bien</li>
+        </ul>
+        <div class="card-desc">
+          Mon parcours scolaire a débuté par un baccalauréat général avec les spécialités Mathématiques et Numérique et Sciences Informatiques (NSI) en terminale, ainsi que la spécialité Physique-Chimie en première. J’ai également suivi les options Mathématiques expertes et Théâtre.<br>
+		J’ai obtenu mon baccalauréat avec la mention Très Bien, et j’ai obtenu la note de 20/20 aux épreuves de mes deux spécialités de terminale. Aujourd’hui, je poursuis mes études en BUT Science des Données à Niort. Les matières que je préfère sont les mathématiques et la programmation en Python.
+        </div>
+      </div>
+      <div class="card">
+        <h3>Activités extrascolaires</h3>
+        <ul>
+          <li>Handball — 11 ans les Herbiers</li>
+          <li>Théâtre — 6 ans</li>
+        </ul>
+        <div class="card-desc">
+          J’ai pratiqué le handball aux Herbiers pendant 11 ans, de 2013 à 2024. Je jouais au poste de pivot ou d’ailier. J’ai également suivi une option théâtre pendant 6 ans. J’ai beaucoup apprécié ces années, et j’ai eu la chance de participer, avec mon lycée, au <a href="https://www.vents-et-marees.fr/le-projet-de-printemps-theatral/" target="_blank" rel="noopener noreferrer">Printemps théâtral des lycées</a> organisé par l’association Vents et Marées à La Roche-sur-Yon en 2023. Ce fut une expérience très enrichissante pour moi.<br>
+        Je ne me considère pas comme un grand sportif, mais j’aime faire du sport avec mes amis ou ma famille, au moins une fois par semaine. J’aime aussi me lancer des défis. C’est pour cette raison qu’au lycée, j’ai participé trois fois au <a href="https://algorea.org/" target="_blank" rel="noopener noreferrer">concours Algoréa</a>, un concours de programmation basé sur la résolution de problèmes. J’ai adoré cette expérience et j’ai même réussi à atteindre les demi-finales en terminale.
+        </div>
+      </div>
+      <div class="card">
+        <h3>Centres d'intérêt</h3>
+        <ul>
+          <li>Jeux de société & énigmes</li>
+          <li>Créativité, défis & résolution de problèmes</li>
+        </ul>
+        <div class="card-desc">
+          En dehors de l’école, je suis passionné par les jeux de société et les jeux d’énigmes. J’aime résoudre des problèmes et mettre ma logique à l’épreuve. C’est aussi pour cela que j’apprécie autant les mathématiques et l’informatique.
+        </div>
+      </div>
+    </div>
+  </br>
+</br>
+  </section>
+
+  
+
+  <section id="projets">
+    <h2>Mes projets universitaires</h2>
+    <a href="projet2.html" class="css-button-arrow--red">Voir tous les projets</a>
+
+    <div class="projects">
+      <div class="card">
+        <h3>Projet 1</h3>
+        <p>Analyse de données avec Python</p>
+      </div>
+      <div class="card">
+        <h3>Projet 2</h3>
+        <p>Machine Learning - prédiction</p>
+      </div>
+      <div class="card">
+        <h3>Projet 3</h3>
+        <p>Visualisation de données</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="bilans">
+    <h2>Bilans de formation</h2>
+
+    <details class="bilan-item">
+      <summary>Bilan de 1ère année</summary>
+      <p>
+        Cette première année en BUT Science des Données à Niort a été une belle expérience pour moi, tant sur le plan personnel que scolaire. Dès le début de l’année, j’ai dû m’adapter à une nouvelle vie, celle en appartement, loin de chez moi. La transition s’est faite de manière assez fluide, et j’ai eu la chance de rencontrer des personnes bienveillantes et ouvertes. Grâce à ce cadre, j’ai rapidement trouvé mon rythme et me suis habitué à la vie universitaire.
+        <br><br>
+        Le premier semestre s’est très bien déroulé. J’ai compris assez vite que j’étais à ma place dans cette formation, et cela m’a motivé à m’investir pleinement. J’ai adopté un rythme de travail régulier et efficace. Le fait d’avoir suivi la spécialité NSI au lycée m’a donné une avance en programmation, ce qui m’a permis de consacrer davantage de temps à d’autres matières que je découvrais, comme les statistiques ou l’économie. Je craignais au départ de m’ennuyer en reprenant les bases en programmation, mais finalement, cela m’a permis de renforcer mes acquis, d’aider mes camarades et d’adapter mes compétences au nouveau contexte. Je considère ce premier semestre comme une vraie réussite, aussi bien sur le plan des résultats que sur le plan de l’attitude. J’étais motivé, sérieux, et l’envie de me dépasser, notamment dans une forme de compétition amicale avec mes camarades, m’a poussé à donner le meilleur de moi-même.
+        <br><br>
+        Le deuxième semestre s’est également bien passé, avec des résultats satisfaisants. Il a été, selon moi, plus enrichissant encore, car j’y ai découvert de nouveaux outils et de nouvelles notions. Mais cette nouveauté a aussi apporté davantage de complexité. Malgré tout, j’ai su m’adapter, progresser et maintenir un bon niveau. Cela dit, ma motivation a connu une baisse durant cette période. En me reposant sur les bons résultats du premier semestre, je me suis un peu relâché. Ce relâchement a duré environ deux mois, entre mars et avril. Mes notes n’étaient pas mauvaises, mais je sentais que je n’étais plus autant impliqué, et que je n’exploitais pas tout mon potentiel. J’ai eu un déclic en mai : j’ai pris conscience de ce relâchement et me suis rapidement remis au travail. Le retour de ma motivation s’est accompagné de projets stimulants, notamment le concours Dataviz, que je tenais à réussir. Ces projets m’ont redonné une dynamique de travail sérieuse, similaire à celle du premier semestre.
+        <br><br>
+        D’un point de vue global, je suis satisfait de mon année. Je ne m’attendais pas à obtenir d’aussi bons résultats, et je pense que la compétition bienveillante entre camarades, ainsi que la bonne ambiance dans la promotion, y ont largement contribué. J’ai fait de nouvelles rencontres, découvert le monde de la donnée, et commencé à comprendre les enjeux et les métiers liés à ce domaine. L’un de mes objectifs de l’année était d’obtenir une alternance pour la suite de mon parcours. Pour l’instant, cet objectif n’est pas encore atteint, malgré un investissement important dans mes recherches. Je reste motivé, et je continue à chercher activement. Je suis convaincu qu’une expérience en entreprise serait un véritable atout pour ma formation, autant sur le plan des compétences que sur le plan personnel.
+        <br><br>
+        En résumé, cette première année a été réussie, enrichissante, et pleine de découvertes. J’ai atteint mes objectifs académiques et j’ai beaucoup appris sur moi-même. Je suis désormais prêt à repartir avec énergie et ambition pour ma deuxième année au sein du BUT Science des Données.
+
+      </p>
+    </details>
+
+    <details class="bilan-item">
+      <summary>Bilan de 2ème année</summary>
+      <p>
+        Votre texte...
+      </p>
+    </details>
+  </section>
+  <section id="contact">
+    <h2>Me contacter</h2>
+    <div class="contact-grid">
+      <div class="contact-cv">
+        <h3>Mon CV</h3>
+        <iframe src="img/CVavion.pdf" frameborder="0" class="cv-preview"></iframe>
+        <a href="img/CVavion.pdf" download class="btn-cv">Télécharger mon CV</a>
+      </div>
+      <div class="contact-info">
+        <p>Mon email : antonin.vionpro@gmail.com</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 - Mon Portfolio</p>
+  </footer>
+
+  <div id="section-indicator" aria-live="polite">
+    <span class="indicator-dot"></span>
+    <span class="indicator-text">Accueil</span>
   </div>
-</section>
 
+  <script>
+    const sectionIndicator = document.getElementById("section-indicator");
+    const indicatorText = sectionIndicator.querySelector(".indicator-text");
+    const observedSections = Array.from(document.querySelectorAll("section[id]"));
+    const navLabelById = new Map(
+      Array.from(document.querySelectorAll("nav a[href^='#']")).map((link) => [
+        link.getAttribute("href").slice(1),
+        link.textContent.trim(),
+      ])
+    );
 
+    function updateSectionIndicator(sectionId) {
+      const label = navLabelById.get(sectionId) || sectionId;
+      indicatorText.textContent = label;
+      sectionIndicator.classList.toggle("visible", sectionId !== "accueil");
+    }
 
-<section id="presentation" class="section">
-  <div class="section-content">
-    <img src="img/presentation.png" alt="Présentation" class="section-img">
-    <div class="text-content">
-      <h2>Qui suis-je ?</h2>
-      <p>Je m'appelle Antonin Vion, passionné par l'informatique et actuellement étudiant en BUT SD.</p>
-	  <a href="apropos.html" class="button">En apprendre plus</a>
-    </div>
-  </div>
-</section>
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        const visibleEntry = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-<section id="bilan" class="section">
-  <div class="section-content">
-    <a href="https://www.but-sd.fr/" target="_blank" rel="noopener noreferrer"><img src="img/bilan.png"   alt="Bilan" class="section-img"></a>
-    <div class="text-content">
-      <h2>Mon Bilan</h2>
-      <p>Découvrez mon parcours, mes apprentissages et mes réalisations au cours de cette aventure.</p>
-      <a href="bilan.html"  class="button">Voir le Bilan</a>
-    </div>
-  </div>
-</section>
+        if (visibleEntry) {
+          updateSectionIndicator(visibleEntry.target.id);
+        }
+      },
+      {
+        threshold: [0.35, 0.55, 0.75],
+      }
+    );
 
-<section id="projets" class="section">
-  <div class="section-content">
-    <img src="img/projets.png" alt="Projets" class="section-img">
-    <div class="text-content">
-      <h2>Mes Projets</h2>
-      <p>J'ai mené plusieurs projets passionnants que je vous invite à découvrir en détail.</p>
-      <a href="projet2.html" class="button">Voir les Projets</a>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="section-content">
-    <img src="img/contact.png" alt="Contact" class="section-img">
-    <div class="text-content">
-      <h2>Me Contacter</h2>
-      <p>Envie de me poser une question ou de collaborer avec moi ?</p>
-      <a href="contact.html" class="button">Contactez-moi</a>
-    </div>
-  </div>
-</section>
-
-
-
-
-	
-
-
-
+    observedSections.forEach((section) => sectionObserver.observe(section));
+  </script>
 
 </body>
 </html>
-
