@@ -344,6 +344,31 @@ p {
   margin-top: 40px;
 }
 
+#projets .project-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+#projets .project-card img {
+  width: 100%;
+  height: 170px;
+  display: block;
+  object-fit: cover;
+  border-bottom: 1px solid var(--card-border);
+}
+
+#projets .project-card-content {
+  padding: 16px 18px 18px;
+}
+
+#projets .project-card-content h3 {
+  margin-bottom: 10px;
+}
+
+#projets .project-card-content p {
+  margin: 0;
+}
+
 .card {
   position: relative;
   background: var(--bg-two);
@@ -395,6 +420,10 @@ p {
 
 @media (max-width: 768px) {
   .card-desc { position: static; transform: none; opacity: 1; visibility: visible; margin-top: 12px; }
+
+  #projets .project-card img {
+    height: 150px;
+  }
 }
 
 /* CONTACT */
